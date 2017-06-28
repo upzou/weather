@@ -1,0 +1,9 @@
+<litepal>
+    <dbname value="weather"/>
+    <version value="1"/>
+    <list>
+        <mapping class="com.upzou.weather.bean.Province"/>
+        <mapping class="com.upzou.weather.bean.City"/>
+        <mapping class="com.upzou.weather.bean.County"/>
+    </list>
+</litepal>
