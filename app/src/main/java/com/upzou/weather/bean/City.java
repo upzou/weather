@@ -12,6 +12,9 @@ public class City extends DataSupport {
 
     private int provinceId;//当前市所属省id
 
+    public City() {
+    }
+
     public City(int id, String cityName, int cityCode, int provinceId) {
         this.id = id;
         this.cityName = cityName;
