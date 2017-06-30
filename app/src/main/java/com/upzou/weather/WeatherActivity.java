@@ -1,5 +1,6 @@
 package com.upzou.weather;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
@@ -21,6 +22,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.upzou.weather.bean.Forecast;
 import com.upzou.weather.bean.Weather;
+import com.upzou.weather.service.AutoUpdateService;
 import com.upzou.weather.utils.HttpUtil;
 import com.upzou.weather.utils.JsonUtil;
 
@@ -233,8 +235,8 @@ public class WeatherActivity extends AppCompatActivity {
         carWashText.setText(carWash);
         sportText.setText(sport);
         weatherLayout.setVisibility(View.VISIBLE);
-//        Intent intent = new Intent(this, AutoUpdateService.class);
-//        startService(intent);
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
 
 
